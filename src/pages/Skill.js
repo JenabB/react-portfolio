@@ -2,19 +2,18 @@ import skills from "../data/skills.json";
 
 const Skill = () => {
   return (
-    <div>
-      <div>
+    <div className="lg:w-4/5 sm:w-full mx-auto">
+      <div className="grid grid-cols-3 text-center">
         {skills.skills.map((skill) => (
-          <div>
-            <div>
+          <div className="shadow-lg m-2 p-2">
+            <div className="text-center">
               <img
+                className="w-2/4 h-2/4 mx-auto my-2"
                 src={skill.logo}
                 alt="skill logo"
-                style={{ width: "40px", height: "40px" }}
               />
-
-              <h4>{skill.name}</h4>
             </div>
+            <h5>{skill.name}</h5>
           </div>
         ))}
       </div>

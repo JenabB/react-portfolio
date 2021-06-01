@@ -2,7 +2,7 @@ import React from "react";
 
 const About = () => {
   return (
-    <div>
+    <div className="w-4/5 mx-auto p-4">
       <p>
         hello I'm Yogi Surya Pranata, I'm from Indonesia. I really like
         engineering, especially mechanics, electricity and computers. I am very
