@@ -4,13 +4,12 @@ const Portfolio = () => {
   const totalProject = portfolios.web.length + portfolios.design.length;
 
   return (
-    <div className="lg:w-4/5 sm:w-full mx-auto">
+    <div className="lg:w-4/5 sm:w-full mx-auto shadow-sm p-4">
       <h1>Total: {totalProject}</h1>
-      <hr />
       <h1>Web App :{portfolios.web.length}</h1>
 
-      {portfolios.web.map((w) => (
-        <div className="shadow-lg rounded m-2 px-4">
+      {portfolios.web.map((w, index) => (
+        <div key={index} className="shadow rounded m-2 px-4">
           <div className="flex">
             <img
               src={w.logo}

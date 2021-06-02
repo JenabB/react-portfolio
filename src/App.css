@@ -1,0 +1,11 @@
+.App {
+  max-width: 480px;
+  margin: 20px auto;
+  height: 100vh;
+}
+
+@media only screen and (max-width: 600px) {
+  .App {
+    margin: 0px;
+  }
+}

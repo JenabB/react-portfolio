@@ -2,12 +2,13 @@ import certificates from "../data/certficates.json";
 
 const Certificate = () => {
   return (
-    <div>
-      {certificates.certificates.map((x, y) => (
-        <div className="sertifikat-container">
+    <div className="lg:w-4/5 sm:w-full mx-auto shadow-sm py-4">
+      {certificates.certificates.map((x, index) => (
+        <div className="shadow rounded m-2 p-4" key={index}>
           <div>
-            <h1 className="sertifikat-title">{x.name}</h1>
-            <h1 className="sertifikat-from">{x.from}</h1>
+            <h1 className="text-lg text-green-800">{x.name}</h1>
+            <h2 className="">{x.from}</h2>
+            <h3 className="">{x.event}</h3>
           </div>
         </div>
       ))}

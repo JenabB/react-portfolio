@@ -8,7 +8,7 @@ import Blog from "./pages/Blog";
 export default function Navigation() {
   return (
     <Router>
-      <div className="lg:w-4/5 sm:w-full mx-auto">
+      <div className="lg:w-4/5 sm:w-full mx-auto shadow">
         <ul className="flex justify-center">
           <li className="m-2">
             <Link to="/">About</Link>
