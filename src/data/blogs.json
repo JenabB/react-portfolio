@@ -2,10 +2,12 @@
   "blogs": [
     {
       "name": "Penggunaan Modul SIM800L pada Arduino",
+      "category": [{ "name": "Arduino" }, { "name": "SIM800L" }],
       "source": "https://stackoverflow.com/questions/14867558/html-tag-a-want-to-add-both-href-and-onclick-working"
     },
     {
       "name": "Penggunaan Sensor YL-69 pad Arduino",
+      "category": [{ "name": "Arduino" }, { "name": "YL-69" }],
       "source": "https://stackoverflow.com/questions/14867558/html-tag-a-want-to-add-both-href-and-onclick-working"
     }
   ]
