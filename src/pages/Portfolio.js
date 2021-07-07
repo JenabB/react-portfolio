@@ -14,7 +14,7 @@ const Portfolio = () => {
             <img
               src={w.logo}
               alt="logo"
-              style={{ width: "100px", height: "100px" }}
+              style={{ width: "70px", height: "70px" }}
               className="my-auto"
             />
             <div className="mx-4 py-4">

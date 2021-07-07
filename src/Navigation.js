@@ -1,15 +1,15 @@
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-import Portfolio from "./pages/Portfolio";
-import Certificate from "./pages/Certificate";
-import Skill from "./pages/Skill";
-import About from "./pages/About";
-import Blog from "./pages/Blog";
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import Portfolio from './pages/Portfolio';
+import Certificate from './pages/Certificate';
+import Skill from './pages/Skill';
+import About from './pages/About';
+import Blog from './pages/Blog';
 
 export default function Navigation() {
   return (
     <Router>
-      <div className="lg:w-4/5 sm:w-full mx-auto shadow">
-        <ul className="flex justify-center">
+      <div className="shadow">
+        <ul className="flex w-full justify-center bg-indigo-800 text-white">
           <li className="m-2">
             <Link to="/">About</Link>
           </li>
