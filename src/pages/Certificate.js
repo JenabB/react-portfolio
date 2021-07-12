@@ -1,8 +1,8 @@
-import certificates from "../data/certficates.json";
+import certificates from '../data/certficates.json';
 
 const Certificate = () => {
   return (
-    <div className="lg:w-4/5 sm:w-full mx-auto shadow-sm py-4">
+    <div className="w-full shadow-sm py-4">
       {certificates.certificates.map((x, index) => (
         <div className="shadow rounded m-2 p-4" key={index}>
           <div>

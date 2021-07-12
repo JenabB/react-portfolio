@@ -1,8 +1,9 @@
-import React from "react";
+import React from 'react';
+import { FaFacebook, FaInstagram, FaGithub } from 'react-icons/fa';
 
 const About = () => {
   return (
-    <div className="w-4/5 mx-auto p-4">
+    <div className="mx-auto px-12 py-10">
       <p>
         hello I'm Yogi Surya Pranata, I'm from Indonesia. I really like
         engineering, especially mechanics, electricity and computers. I am very
@@ -10,10 +11,10 @@ const About = () => {
         dream to help others. My favorite style of web development is mobile
         first with a minimalist design.
       </p>
-      <div>
-        <h1>facebook</h1>
-        <h1>Instagram</h1>
-        <h1>Github</h1>
+      <div className="flex justify-center mt-10">
+        <FaFacebook />
+        <FaInstagram className="mx-4" />
+        <FaGithub />
       </div>
     </div>
   );

@@ -119,27 +119,22 @@
       "logo": "https://github.com/JenabB/react-bmkg-gempa/blob/main/public/icon192.png?raw=true"
     },
     {
-      "name": "next-OpenWeatherMap",
-      "description": "Weather App using NextJS and OpenWeatherMap API",
+      "name": "react-weather",
+      "description": "Weather App using React and OpenWeatherMap API",
       "tools": [
-        { "name": "NextJS" },
+        { "name": "React" },
         { "name": "OpenWeatherMap API" },
-        { "name": "localStorage" },
-        { "name": "Material UI" }
+        { "name": "localStorage" }
       ],
-      "src": "next-open-weather.vercel.app/",
-      "logo": "data:image/png;base64,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"
+      "src": "https://react-weather-five.vercel.app/",
+      "logo": "https://github.com/JenabB/react-weather/blob/main/public/logo192.png?raw=true"
     },
     {
       "name": "react-flower-shop",
       "description": "Flower Shop with mobile-first design (in-development)",
-      "tools": [
-        { "name": "React" },
-        { "name": "localStorage" },
-        { "name": "Tailwinds" }
-      ],
-      "src": "next-open-weather.vercel.app/",
-      "logo": "data:image/png;base64,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"
+      "tools": [{ "name": "React" }, { "name": "localStorage" }],
+      "src": "https://react-flower-shop.vercel.app/",
+      "logo": "https://github.com/JenabB/react-flower-shop/blob/main/public/logo192.png?raw=true"
     },
     {
       "name": "MERN-Auth",

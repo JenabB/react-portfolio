@@ -8,8 +8,8 @@ import Blog from './pages/Blog';
 export default function Navigation() {
   return (
     <Router>
-      <div className="shadow">
-        <ul className="flex w-full justify-center bg-indigo-800 text-white">
+      <div>
+        <ul className="flex w-full justify-center bg-blue-400 text-white">
           <li className="m-2">
             <Link to="/">About</Link>
           </li>

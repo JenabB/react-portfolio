@@ -1,10 +1,10 @@
-import portfolios from "../data/portfolios.json";
+import portfolios from '../data/portfolios.json';
 
 const Portfolio = () => {
   const totalProject = portfolios.web.length + portfolios.design.length;
 
   return (
-    <div className="lg:w-4/5 sm:w-full mx-auto shadow-sm p-4">
+    <div className="w-full shadow-sm p-4">
       <h1>Total: {totalProject}</h1>
       <h1>Web App :{portfolios.web.length}</h1>
 
@@ -14,7 +14,7 @@ const Portfolio = () => {
             <img
               src={w.logo}
               alt="logo"
-              style={{ width: "70px", height: "70px" }}
+              style={{ width: '70px', height: '70px' }}
               className="my-auto"
             />
             <div className="mx-4 py-4">
