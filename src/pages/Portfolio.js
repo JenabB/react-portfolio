@@ -1,37 +1,25 @@
+import { useState } from "react";
 import { motion } from "framer-motion";
 
 import portfolios from "../data/portfolios.json";
 
 const Portfolio = () => {
-  const totalProject = portfolios.web.length + portfolios.design.length;
+  const [query, setQuery] = useState(null);
 
-  return (
-    <motion.div
-      initial="hidden"
-      animate="visible"
-      variants={{
-        hidden: {
-          scale: 0.8,
-          opacity: 0,
-        },
-        visible: {
-          scale: 1,
-          opacity: 1,
-          transition: {
-            delay: 0.4,
-          },
-        },
-      }}
-      className="w-full shadow-sm bg-gray-100 p-2"
-    >
-      <div className="text-center my-8">
-        <input
-          type="search"
-          className="rounded-full px-3 py-2"
-          placeholder="search"
-        />
-      </div>
-      {portfolios.web.map((w, index) => (
+  const handleQueryChange = (e) => {
+    setQuery(e.target.value);
+  };
+
+  const items = portfolios.web
+    // eslint-disable-next-line array-callback-return
+    .filter((data) => {
+      if (query == null) return data;
+      else if (data.name.toLowerCase().includes(query.toLowerCase())) {
+        return data;
+      }
+    })
+    .map((w, index) => {
+      return (
         <div key={index} className="shadow bg-white rounded m-4 px-4">
           <div className="flex">
             <img
@@ -57,7 +45,36 @@ const Portfolio = () => {
             </div>
           </div>
         </div>
-      ))}
+      );
+    });
+  return (
+    <motion.div
+      initial="hidden"
+      animate="visible"
+      variants={{
+        hidden: {
+          scale: 0.8,
+          opacity: 0,
+        },
+        visible: {
+          scale: 1,
+          opacity: 1,
+          transition: {
+            delay: 0.4,
+          },
+        },
+      }}
+      className="w-full shadow-sm bg-gray-100 p-2"
+    >
+      <div className="text-center my-8">
+        <input
+          type="search"
+          className="rounded-full px-3 py-2"
+          placeholder="search"
+          onChange={handleQueryChange}
+        />
+      </div>
+      {items}
 
       <div className="design-container">
         <h1>Design Graphic :{portfolios.design.length}</h1>
