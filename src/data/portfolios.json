@@ -1,6 +1,59 @@
 {
   "web": [
     {
+      "name": "Alokasi Dana",
+      "description": "Make your money management easier",
+      "tools": [
+        {
+          "name": "React"
+        },
+        {
+          "name": "Context API"
+        },
+        { "name": "Framer Motion" },
+        { "name": "localStorage" },
+        {
+          "name": "Tailwindscss"
+        }
+      ],
+      "src": "https://react-alokasi-dana.vercel.app/",
+      "logo": "https://github.com/JenabB/react-alokasi-dana/blob/main/public/logo192.png?raw=true"
+    },
+    {
+      "name": "Retirement Fund Calculator",
+      "description": "Prepare your retirement fund",
+      "tools": [
+        {
+          "name": "React"
+        },
+        {
+          "name": "Redux"
+        },
+        {
+          "name": "Tailwindscss"
+        }
+      ],
+      "src": "https://redux-retirement-fund-5kv7unc35-jenabb.vercel.app/",
+      "logo": "https://github.com/JenabB/redux-retirement-fund/blob/main/public/logo192.png?raw=true"
+    },
+    {
+      "name": "Shopping Cart",
+      "description": "Web app to calculate your Body Mass Index",
+      "tools": [
+        {
+          "name": "React"
+        },
+        {
+          "name": "Context API"
+        },
+        {
+          "name": "Tailwindscss"
+        }
+      ],
+      "src": "https://context-shopping-cart-beryl.vercel.app/",
+      "logo": "https://github.com/JenabB/context-shopping-cart/blob/main/public/logo192.png?raw=true"
+    },
+    {
       "name": "BMI Calculator",
       "description": "Web app to calculate your Body Mass Index",
       "tools": [
@@ -20,24 +73,6 @@
     {
       "name": "Kalkulator Dana Pinjaman",
       "description": "Web app to calculate loan funds in the form of flat, effective and annuity interest",
-      "tools": [
-        {
-          "name": "React"
-        },
-        {
-          "name": "Context API"
-        },
-
-        {
-          "name": "Material UI"
-        }
-      ],
-      "src": "https://react-kalkulator-dana-pinjaman.vercel.app/",
-      "logo": "https://github.com/JenabB/react-kalkulator-dana-pinjaman/blob/main/public/logo192.png?raw=true"
-    },
-    {
-      "name": "Keep",
-      "description": "Personal Note",
       "tools": [
         {
           "name": "React"
@@ -74,6 +109,25 @@
       "src": "https://react-momentum.vercel.app/",
       "logo": "https://github.com/JenabB/react-momentum/blob/main/public/logo192.png?raw=true"
     },
+    {
+      "name": "Keep",
+      "description": "Personal Note",
+      "tools": [
+        {
+          "name": "React"
+        },
+        {
+          "name": "Context API"
+        },
+
+        {
+          "name": "Material UI"
+        }
+      ],
+      "src": "https://react-kalkulator-dana-pinjaman.vercel.app/",
+      "logo": "https://github.com/JenabB/react-kalkulator-dana-pinjaman/blob/main/public/logo192.png?raw=true"
+    },
+
     {
       "name": "Contact",
       "description": "Web app for save your contact",
@@ -297,11 +351,11 @@
           "name": "BMKG API"
         },
         {
-          "name": "Material UI"
+          "name": "Tailwindcss"
         }
       ],
-      "src": "https://react-bmkg.netlify.app/",
-      "logo": "https://github.com/JenabB/react-bmkg-gempa/blob/main/public/icon192.png?raw=true"
+      "src": "https://react-bmkg.vercel.app/",
+      "logo": "https://github.com/JenabB/react-bmkg/blob/main/public/logo192.png?raw=true"
     },
     {
       "name": "Corona Tracker",

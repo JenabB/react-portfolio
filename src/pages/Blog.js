@@ -1,12 +1,29 @@
-import React from 'react';
-import blogs from '../data/blogs.json';
+import React from "react";
+import blogs from "../data/blogs.json";
+import { motion } from "framer-motion";
 
 const Blog = () => {
-  console.log(blogs);
   return (
-    <div className="w-full p-4">
+    <motion.div
+      initial="hidden"
+      animate="visible"
+      variants={{
+        hidden: {
+          scale: 0.8,
+          opacity: 0,
+        },
+        visible: {
+          scale: 1,
+          opacity: 1,
+          transition: {
+            delay: 0.4,
+          },
+        },
+      }}
+      className="bg-gray-100 p-4"
+    >
       {blogs.blogs.map((blog, index) => (
-        <div key={index} className="shadow-lg m-2 p-4">
+        <div key={index} className="bg-white shadow-lg m-2 p-4">
           <div>
             <p>
               {blogs.blogs.indexOf(blog) + 1}. <span>{blog.name}</span>
@@ -23,7 +40,7 @@ const Blog = () => {
           </div>
         </div>
       ))}
-    </div>
+    </motion.div>
   );
 };
 

@@ -1,9 +1,27 @@
-import React from 'react';
-import { FaFacebook, FaInstagram, FaGithub } from 'react-icons/fa';
+import React from "react";
+import { FaFacebook, FaInstagram, FaGithub } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 const About = () => {
   return (
-    <div className="mx-auto px-12 py-10">
+    <motion.div
+      initial="hidden"
+      animate="visible"
+      variants={{
+        hidden: {
+          scale: 0.8,
+          opacity: 0,
+        },
+        visible: {
+          scale: 1,
+          opacity: 1,
+          transition: {
+            delay: 0.4,
+          },
+        },
+      }}
+      className="mx-auto px-12 py-10"
+    >
       <p>
         hello I'm Yogi Surya Pranata, I'm from Indonesia. I really like
         engineering, especially mechanics, electricity and computers. I am very
@@ -16,7 +34,7 @@ const About = () => {
         <FaInstagram className="mx-4" />
         <FaGithub />
       </div>
-    </div>
+    </motion.div>
   );
 };
 

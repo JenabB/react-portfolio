@@ -1,20 +1,43 @@
-import portfolios from '../data/portfolios.json';
+import { motion } from "framer-motion";
+
+import portfolios from "../data/portfolios.json";
 
 const Portfolio = () => {
   const totalProject = portfolios.web.length + portfolios.design.length;
 
   return (
-    <div className="w-full shadow-sm p-4">
-      <h1>Total: {totalProject}</h1>
-      <h1>Web App :{portfolios.web.length}</h1>
-
+    <motion.div
+      initial="hidden"
+      animate="visible"
+      variants={{
+        hidden: {
+          scale: 0.8,
+          opacity: 0,
+        },
+        visible: {
+          scale: 1,
+          opacity: 1,
+          transition: {
+            delay: 0.4,
+          },
+        },
+      }}
+      className="w-full shadow-sm bg-gray-100 p-2"
+    >
+      <div className="text-center my-8">
+        <input
+          type="search"
+          className="rounded-full px-3 py-2"
+          placeholder="search"
+        />
+      </div>
       {portfolios.web.map((w, index) => (
-        <div key={index} className="shadow rounded m-2 px-4">
+        <div key={index} className="shadow bg-white rounded m-4 px-4">
           <div className="flex">
             <img
               src={w.logo}
               alt="logo"
-              style={{ width: '70px', height: '70px' }}
+              style={{ width: "70px", height: "70px" }}
               className="my-auto"
             />
             <div className="mx-4 py-4">
@@ -44,7 +67,7 @@ const Portfolio = () => {
           </div>
         ))}
       </div>
-    </div>
+    </motion.div>
   );
 };
 
