@@ -33,7 +33,7 @@
           "name": "Tailwindscss"
         }
       ],
-      "src": "https://redux-retirement-fund-5kv7unc35-jenabb.vercel.app/",
+      "src": "https://redux-retirement-fund.vercel.app/",
       "logo": "https://github.com/JenabB/redux-retirement-fund/blob/main/public/logo192.png?raw=true"
     },
     {
@@ -52,6 +52,24 @@
       ],
       "src": "https://context-shopping-cart-beryl.vercel.app/",
       "logo": "https://github.com/JenabB/context-shopping-cart/blob/main/public/logo192.png?raw=true"
+    },
+    {
+      "name": "MealDB",
+      "description": "Web App Meals for you",
+      "tools": [
+        {
+          "name": "React"
+        },
+        {
+          "name": "MealDB API"
+        },
+        {
+          "name": "Context API"
+        },
+        { "name": "Tailwindcss" }
+      ],
+      "src": "https://react-hook-mealdb-jenabb.vercel.app/",
+      "logo": "https://github.com/JenabB/react-hook-mealdb/blob/main/public/logo192.png?raw=true"
     },
     {
       "name": "BMI Calculator",
@@ -110,24 +128,12 @@
       "logo": "https://github.com/JenabB/react-momentum/blob/main/public/logo192.png?raw=true"
     },
     {
-      "name": "Keep",
-      "description": "Personal Note",
-      "tools": [
-        {
-          "name": "React"
-        },
-        {
-          "name": "Context API"
-        },
-
-        {
-          "name": "Material UI"
-        }
-      ],
-      "src": "https://react-kalkulator-dana-pinjaman.vercel.app/",
-      "logo": "https://github.com/JenabB/react-kalkulator-dana-pinjaman/blob/main/public/logo192.png?raw=true"
+      "name": "News",
+      "description": "Web for reading Indonesian news from various source like CNN, CNBC and etc",
+      "tools": [{ "name": "React" }, { "name": "satyawikanadaAPI" }],
+      "src": "https://react-news-app-three.vercel.app/",
+      "logo": "https://github.com/JenabB/react-news-app/blob/main/public/logo192.png?raw=true"
     },
-
     {
       "name": "Contact",
       "description": "Web app for save your contact",
@@ -150,6 +156,24 @@
       ],
       "src": "https://github.com/JenabB/mern-contact-client",
       "logo": "https://github.com/JenabB/mern-contact-client/blob/main/public/logo192.png?raw=true"
+    },
+    {
+      "name": "Keep",
+      "description": "Personal Note",
+      "tools": [
+        {
+          "name": "React"
+        },
+        {
+          "name": "Context API"
+        },
+
+        {
+          "name": "Material UI"
+        }
+      ],
+      "src": "https://react-kalkulator-dana-pinjaman.vercel.app/",
+      "logo": "https://github.com/JenabB/react-kalkulator-dana-pinjaman/blob/main/public/logo192.png?raw=true"
     },
     {
       "name": "Chat App",
@@ -276,24 +300,7 @@
       "src": "https://react-tmdb-git-main-jenabb.vercel.app/",
       "logo": "https://github.com/JenabB/react-tmdb/blob/main/public/logo192.png?raw=true"
     },
-    {
-      "name": "MealDB",
-      "description": "Web App Meals for you",
-      "tools": [
-        {
-          "name": "React"
-        },
-        {
-          "name": "MealDB API"
-        },
-        {
-          "name": "Context API"
-        },
-        { "name": "Tailwindcss" }
-      ],
-      "src": "https://react-hook-mealdb-jenabb.vercel.app/",
-      "logo": "https://github.com/JenabB/react-hook-mealdb/blob/main/public/logo192.png?raw=true"
-    },
+
     {
       "name": "Pengaduan",
       "description": "Web untuk pengaduan masyarakat",
@@ -413,13 +420,7 @@
       "src": "https://mern-auth19.herokuapp.com/login",
       "logo": "https://github.com/JenabB/MERN-Auth/blob/main/client/public/logo192.png?raw=true"
     },
-    {
-      "name": "News",
-      "description": "Web for reading Indonesian news from various source like CNN, CNBC and etc",
-      "tools": [{ "name": "React" }, { "name": "satyawikanadaAPI" }],
-      "src": "https://react-news-app-three.vercel.app/",
-      "logo": "https://github.com/JenabB/react-news-app/blob/main/public/logo192.png?raw=true"
-    },
+
     {
       "name": "Premierealize",
       "description": "Premiere League data using ",

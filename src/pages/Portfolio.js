@@ -36,7 +36,7 @@ const Portfolio = () => {
               <div className="flex flex-wrap">
                 {w.tools.map((t) => (
                   <div className="m-1">
-                    <h6 className="bg-green-400 text-white p-1 px-2 text-xs rounded-xl">
+                    <h6 className="bg-green-400 text-white p-0 px-1 text-xs rounded-xl">
                       {t.name}
                     </h6>
                   </div>
