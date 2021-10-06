@@ -3,7 +3,24 @@ import profile from "./assets/images/profile.png";
 
 const Header = () => {
   return (
-    <div className="shadow rounded-2xl text-center">
+    <motion.div
+      initial="hidden"
+      animate="visible"
+      variants={{
+        hidden: {
+          scale: 0.8,
+          opacity: 0,
+        },
+        visible: {
+          scale: 1,
+          opacity: 1,
+          transition: {
+            delay: 1,
+          },
+        },
+      }}
+      className="shadow rounded-2xl text-center"
+    >
       <img
         src={profile}
         alt="profile"
@@ -20,7 +37,7 @@ const Header = () => {
         </motion.h1>
         <h2>Junior Front-End Developer</h2>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
