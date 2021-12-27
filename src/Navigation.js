@@ -9,6 +9,8 @@ import Certificate from "./pages/Certificate";
 import Skill from "./pages/Skill";
 import About from "./pages/About";
 import Blog from "./pages/Blog";
+import Experience from "./pages/Experience";
+
 import { motion } from "framer-motion";
 
 export default function Navigation() {
@@ -31,11 +33,11 @@ export default function Navigation() {
               },
             },
           }}
-          className="flex w-full justify-center bg-blue-400 text-white"
+          className="flex justify-center overflow-y-auto bg-blue-400 text-white px-4"
         >
           <NavLink
             to="/"
-            className="mx-2 p-1 px-2"
+            className="py-2 px-4"
             exact
             activeStyle={{
               color: "#60A5FA",
@@ -44,10 +46,21 @@ export default function Navigation() {
           >
             About
           </NavLink>
+          <NavLink
+            to="/experience"
+            className="py-2 px-4"
+            exact
+            activeStyle={{
+              color: "#60A5FA",
+              backgroundColor: "#F3F4F6",
+            }}
+          >
+            Experience
+          </NavLink>
 
           <NavLink
             to="/portfolio"
-            className="p-1 px-2"
+            className="py-2 px-4"
             exact
             activeStyle={{
               color: "#60A5FA",
@@ -59,7 +72,7 @@ export default function Navigation() {
 
           <NavLink
             to="/blog"
-            className="p-1 px-2"
+            className="py-2 px-4"
             exact
             activeStyle={{
               color: "#60A5FA",
@@ -71,7 +84,7 @@ export default function Navigation() {
 
           <NavLink
             to="/skill"
-            className="p-1 px-2"
+            className="py-2 px-4"
             exact
             activeStyle={{
               color: "#60A5FA",
@@ -82,7 +95,7 @@ export default function Navigation() {
           </NavLink>
           <NavLink
             to="/certificate"
-            className="p-1 px-2"
+            className="py-2 px-4"
             exact
             activeStyle={{
               color: "#60A5FA",
@@ -97,6 +110,7 @@ export default function Navigation() {
 
         <Switch>
           <Route exact path="/" component={About} />
+          <Route exact path="/experience" component={Experience} />
           <Route path="/portfolio" component={Portfolio} />
           <Route path="/blog" component={Blog} />
           <Route path="/skill" component={Skill} />
