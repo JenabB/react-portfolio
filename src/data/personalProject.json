@@ -1,6 +1,25 @@
 {
   "web": [
     {
+      "name": "Point of Sales",
+      "description": "Make your money management easier",
+      "features": [
+        "Record invoices in your store so that it is more organized.",
+        "Analyze the progress of your store through graphs and statistics."
+      ],
+      "tools": [
+        {
+          "name": "React"
+        },
+        {
+          "name": "Redux Toolkit"
+        },
+        { "name": "Ant Design" }
+      ],
+      "src": "https://react-alokasi-dana.vercel.app/",
+      "logo": "https://github.com/JenabB/react-alokasi-dana/blob/main/public/logo192.png?raw=true"
+    },
+    {
       "name": "Alokasi Dana",
       "description": "Make your money management easier",
       "tools": [
@@ -15,6 +34,10 @@
         {
           "name": "Tailwindscss"
         }
+      ],
+      "features": [
+        "Record the money you will allocate according to the budget you have.",
+        "See the movement of your expenses each month through a graph."
       ],
       "src": "https://react-alokasi-dana.vercel.app/",
       "logo": "https://github.com/JenabB/react-alokasi-dana/blob/main/public/logo192.png?raw=true"

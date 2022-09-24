@@ -4,12 +4,12 @@ import {
   Route,
   NavLink,
 } from "react-router-dom";
-import Portfolio from "./pages/Portfolio";
 import Certificate from "./pages/Certificate";
 import Skill from "./pages/Skill";
 import About from "./pages/About";
 import Blog from "./pages/Blog";
 import Experience from "./pages/Experience";
+import { PersonalProject } from "./pages";
 
 import { motion } from "framer-motion";
 
@@ -59,7 +59,7 @@ export default function Navigation() {
           </NavLink>
 
           <NavLink
-            to="/portfolio"
+            to="/personal-project"
             className="py-2 px-4"
             exact
             activeStyle={{
@@ -67,7 +67,7 @@ export default function Navigation() {
               backgroundColor: "#F3F4F6",
             }}
           >
-            Portfolio
+            PersonalProject
           </NavLink>
 
           <NavLink
@@ -111,7 +111,7 @@ export default function Navigation() {
         <Switch>
           <Route exact path="/" component={About} />
           <Route exact path="/experience" component={Experience} />
-          <Route path="/portfolio" component={Portfolio} />
+          <Route path="/personal-project" component={PersonalProject} />
           <Route path="/blog" component={Blog} />
           <Route path="/skill" component={Skill} />
           <Route path="/certificate" component={Certificate} />
